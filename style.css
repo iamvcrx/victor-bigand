@@ -82,9 +82,6 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 
 /* Sizes */
 
-.bloc-lg{
-	padding:100px 20px;
-}
 .bloc-sm{
 	padding:20px;
 }
@@ -688,6 +685,18 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	}
 	.social-margin{
 		width:150px;
+	}
+	.h1-style{
+		width:84.86%;
+	}
+	.h1-about-style{
+		font-size:18px;
+	}
+	.menu-text{
+		font-size:18px;
+	}
+	.h1-bloc-12-style{
+		width:84.86%;
 	}
 	
 }

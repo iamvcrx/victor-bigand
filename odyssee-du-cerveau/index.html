@@ -8,8 +8,8 @@
 	<meta name="robots" content="index, follow">
     <link rel="shortcut icon" type="image/png" href="../favicon.png">
     
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?8722">
-	<link rel="stylesheet" type="text/css" href="../style.css?7696">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?1067">
+	<link rel="stylesheet" type="text/css" href="../style.css?1571">
 	<link rel="stylesheet" type="text/css" href="../css/ionicons.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/all.min.css">
 	
@@ -53,7 +53,7 @@
 	<div class="container bloc-no-padding-lg bloc-no-padding-md bloc-no-padding-sm bloc-no-padding">
 		<div class="row">
 			<div class="col-md-4 text-start">
-				<h1 class="mb-4 menu-text">
+				<h1 class="mb-4 menu-text h1-about-style">
 					<a class="menu-text menu-geo" href="../">ABOUT</a>
 				</h1>
 			</div>
@@ -74,13 +74,13 @@
 
 <!-- bloc-12 -->
 <div class="bloc l-bloc content-bloc-margin" id="bloc-12">
-	<div class="container bloc-lg bloc-no-padding-lg">
+	<div class="container bloc-no-padding-lg bloc-no-padding">
 		<div class="row">
 			<div class="text-start offset-lg-0 col-lg-12 col-sm-12 offset-sm-0 col-12 col-md-12 offset-md-0">
-				<h6 class="mb-4 mt-lg-5 h1-style-1 mb-lg-5">
+				<h6 class="mt-lg-5 h1-style-1 mb-lg-5 mt-4 mb-5">
 					L’odyssée du cerveau - my work
 				</h6>
-				<h6 class="mb-4 mb-lg-3 h1-style-2 h6-32-style">
+				<h6 class="mb-lg-3 h1-style-2 h6-32-style mb-3">
 					Project ambitions
 				</h6>
 				<p class="paragraph-text">
@@ -102,24 +102,24 @@
 				</ul>
 				<ul class="icon-lists">
 					<li>
-						<p class="paragraph-text mb-lg-5">
+						<p class="paragraph-text mb-lg-5 mb-5">
 							how can we use those informations to generate light that will simply express the work of each brain structure ?
 						</p>
 					</li>
 				</ul>
-				<h6 class="mb-4 mb-lg-3 h1-style-2 h6-33-style">
+				<h6 class="mb-lg-3 h1-style-2 h6-33-style mb-3">
 					Structure behaviors according to neurosciences
 				</h6>
-				<p class="paragraph-text mb-lg-5">
+				<p class="paragraph-text mb-lg-5 mb-5">
 					When we listen to music, the first structure receiving the information is <i>the basilar membrane</i>. It particularity is that it decomposes the sound in frequencies as a Fourier transform do.<br><br>Then, the information is treated by <i>the brain stem</i>. This structure listens to every details of the sound and start integrating informations like «&nbsp;the sound is wide&nbsp;» or « the sound is low&nbsp;».<br><br><i>The auditoral cortex</i> then starts analysing the tones and rythms in the signal. The left audio cortex detects onsets in the music while the left one analyses it tonality and notes organisation.<br><br><i>The arcuate fasciculuses</i> transmit those informations to <i>the frontal cortex</i> which analyses logical relations between musical pieces with smart games stimulation : is this piece written by Mozart or by a more modern compositor like Gershwin ?<br><br><i>The motor cortex</i> analyses rhythm structures : it detects the beat, the tempo and enables human to anticipate music, synchronise and dance together.<br><br><i>The limbic system</i> is the one generating emotional responses following music listening.<br><br>Finally, <i>the hippocampus</i> is responsible for your musical memory often related to emotions like nostalgia.
 				</p>
-				<h6 class="mb-4 h2-style mb-lg-3 h6-34-style">
+				<h6 class="h2-style mb-lg-3 h6-34-style mb-3">
 					Real-time audio processing
 				</h6>
-				<p class="paragraph-text mb-lg-5">
+				<p class="paragraph-text mb-lg-5 mb-5">
 					The real time audio analysis algorithms are made in <i>Max MSP</i> software. By « real-time » we mean 2.9ms of global latency (but some algorithms needs more buffer lengths to work well).<br><br>For the basilar membrane, a simple real-time Fourier transform is performed.<br><br>For the brain stem, we compute the RMS envelope, the spectral centroïd and spectral bandwidth of the sound of the quartet.<br><br>For the left auditoral cortex, real-time beat detection algorithms led to bad result as the string quartet audio signal has poor transients and onsets content. We finally chose to adjust tempo manually by tapping it.<br>For the right auditoral cortex, the tonality algorithm is based on P. Toiviainen’s article « <a class="paragraph-text link-style" href="../downloads/toiviainen2003.pdf" target="_blank">Measuring and modeling real-time responses to music: The dynamics of tonality induction</a> ». First, we compute « real-time » (93ms buffer length) chroma profile. Then, we compare it to all 24 chroma profiles of the 12 Major and minor tonalities (see profiles in the article) by computing a correlation vector. We then added tonality induction effect by implementing a memory process (see article for further details).<br><br>The arcuate fasciculus only need to receive a mean RMS envelope of the sound.<br><br>The motor cortex receives the tempo tapped manually.<br><br>Limbic system only works on manual operations (no algorithms) so as the hippocampus.<br>
 				</p>
-				<h6 class="mb-4 h2-style mb-lg-3 h6-35-style">
+				<h6 class="h2-style mb-lg-3 h6-35-style mb-3 ">
 					Real-time visual generation examples
 				</h6>
 				<p class="paragraph-text mb-lg-4">
@@ -236,8 +236,8 @@
 
 
 <!-- Additional JS -->
-<script src="../js/bootstrap.bundle.min.js?6413"></script>
-<script src="../js/blocs.min.js?2520"></script>
+<script src="../js/bootstrap.bundle.min.js?1740"></script>
+<script src="../js/blocs.min.js?5714"></script>
 <script src="../js/lazysizes.min.js" defer></script><!-- Additional JS END -->
 
 
