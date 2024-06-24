@@ -32,6 +32,15 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 -------------------------------------------------------------- */
 
 @font-face {
+	font-family:'Poppins-Italic';
+	src: url('./fonts/Poppins-Italic/Poppins-Italic.ttf');
+	src: url('./fonts/Poppins-Italic/Poppins-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display:swap;
+}
+
+@font-face {
 	font-family:'CFScipion-Black';
 	src: url('./fonts/CFScipion-Black/CFScipion-Black.woff2');
 	src: url('./fonts/CFScipion-Black/CFScipion-Black.woff2') format('woff2'),
@@ -560,6 +569,21 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	margin-left:auto;
 	margin-right:auto;
 }
+legend{
+	font-family:"CFScipion-Black";
+	font-size:12px;
+	text-align:right;
+}
+.lege{
+	font-family:"Poppins-Italic";
+	font-size:10px;
+	text-align:right;
+}
+.divider-style{
+	width:85%;
+	margin-left:auto;
+	margin-right:auto;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -672,6 +696,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 		margin-left:auto;
 		margin-right:auto;
 	}
+	.divider-style{
+		width:100%;
+	}
 	
 }
 
@@ -700,6 +727,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	}
 	.h1-bloc-12-style{
 		width:84.86%;
+	}
+	.h1-bloc-2-style{
+		width:100%;
 	}
 	
 }
